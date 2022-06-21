@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import Layout from '../components/Layout'
+import Layout from '../components/Layout/Layout'
 import {ThemeProvider} from "styled-components";
 import { theme, GlobalStyles } from "../styles/ThemeConfig";
 

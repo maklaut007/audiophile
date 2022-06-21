@@ -1,4 +1,4 @@
-import Navbar from './Navbar'
+import Navbar from '../Navbar'
 
 type Props = {
   children?: JSX.Element | JSX.Element[];

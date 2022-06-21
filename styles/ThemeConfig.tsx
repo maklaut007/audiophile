@@ -5,8 +5,8 @@ export const theme: DefaultTheme = {
   colors: {
     orange: "#D87D4A",
     orangeHover: "#FBAF85",
-    backgroundGray: "#F1F1F1",
-    textGray: "#FAFAFA",
+    backgroundWhite: "#F1F1F1",
+    textWhite: "#FAFAFA",
     white: "#FFF",
     black: "#000",
     backgroundBlack: "#101010"
