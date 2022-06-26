@@ -13,17 +13,26 @@ function Footer(): JSX.Element {
             </Link>
           </Styled.LinksListItem>
           <Styled.LinksListItem>
-            <Link href="/">
+            <Link href={{
+              pathname: '/category/[type]',
+              query: { type: "headphones" },
+            }}>
               <Styled.Link>HEADPHONES</Styled.Link>
             </Link>
           </Styled.LinksListItem>
           <Styled.LinksListItem>
-            <Link href="/">
+          <Link href={{
+              pathname: '/category/[type]',
+              query: { type: "speakers" },
+            }}>
               <Styled.Link>SPEAKERS</Styled.Link>
             </Link>
           </Styled.LinksListItem>
           <Styled.LinksListItem>
-            <Link href="/">
+          <Link href={{
+              pathname: '/category/[type]',
+              query: { type: "earphones" },
+            }}>
               <Styled.Link>EARPHONES</Styled.Link>
             </Link>
           </Styled.LinksListItem>
