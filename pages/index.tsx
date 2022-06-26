@@ -12,7 +12,6 @@ const Home: NextPage = () => {
       <NewProduct />
       <ProductTypes />
       <ProductExamples />
-      <CompanyInfo />
     </>
   )
 }

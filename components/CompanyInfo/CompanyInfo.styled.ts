@@ -10,7 +10,7 @@ export const Wrapper = styled.section`
 `;
 export const CompanyInfoImageWrap = styled.div`
   width: 90vw;
-  height: 90vw;
+  height: 82vw;
   position: relative;
 `;
 export const CompanyInfoImage = styled(Image)`
