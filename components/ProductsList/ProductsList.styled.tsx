@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import Image from 'next/image';
+import styled from "styled-components";
+import Image from "next/image";
 
 export const ProductsList = styled.section`
   display: flex;
@@ -8,7 +8,4 @@ export const ProductsList = styled.section`
   align-items: center;
   margin: 40px 0;
 `;
-export const ProductType = styled.article`
-
-`;
-
+export const Product = styled.article``;

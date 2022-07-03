@@ -1,17 +1,14 @@
-import styled from 'styled-components';
-
-import Image from 'next/image';
-
+import styled from "styled-components";
+import Image from "next/image";
 
 export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 40px 5%;
-  
 `;
 export const FirstProduct = styled.div`
-  background-color: ${props => props.theme.colors.orange};
+  background-color: ${(props) => props.theme.colors.orange};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,9 +17,7 @@ export const FirstProduct = styled.div`
   overflow: hidden;
   border-radius: 6px;
 `;
-export const FirstProductImage = styled(Image)`
-  
-`;
+export const FirstProductImage = styled(Image)``;
 export const FirstProductName = styled.h1`
   margin: 40px 0 20px;
   color: white;
@@ -44,7 +39,7 @@ export const Circle = styled.div<{ diameter: string }>`
   width: ${({ diameter }) => diameter};
   height: ${({ diameter }) => diameter};
   border-radius: 50%;
-  border: 1px solid #D8D8D8;
+  border: 1px solid #d8d8d8;
   background-color: rgba(0, 0, 0, 0);
   top: calc(145px - ${({ diameter }) => diameter} / 2);
   opacity: 30%;
@@ -77,15 +72,13 @@ export const ThirdProductImgWrap = styled.div`
   border-radius: 6px;
   overflow: hidden;
 `;
-export const ThirdProductImg = styled(Image)`
-
-`;
+export const ThirdProductImg = styled(Image)``;
 export const ThirdProductDescription = styled.div`
   margin: 20px 0;
   font-size: 28px;
   font-weight: 400;
   letter-spacing: 0.1rem;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   border-radius: 6px;
   padding: 40px 20px;
 `;

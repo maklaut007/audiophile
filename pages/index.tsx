@@ -1,7 +1,7 @@
-import type { NextPage } from 'next'
-import NewProduct from '../components/NewProduct'
-import ProductExamples from '../components/ProductExamples'
-import ProductTypes from '../components/ProductTypes'
+import type { NextPage } from "next";
+import NewProduct from "../components/NewProduct";
+import ProductExamples from "../components/ProductExamples";
+import ProductTypes from "../components/ProductTypes";
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +10,7 @@ const Home: NextPage = () => {
       <ProductTypes />
       <ProductExamples />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
