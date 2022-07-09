@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import CategoryHeader from "../../components/CategoryHeader";
 import ProductsList from "../../components/ProductsList";
+import ProductTypes from "../../components/ProductTypes";
 import fsPromises from "fs/promises";
 import path from "path";
 import { GetStaticProps, GetStaticPaths } from "next";
@@ -14,6 +15,7 @@ const Home: NextPage = (props: any) => {
     <>
       <CategoryHeader name={name?.toString() || ""}></CategoryHeader>
       <ProductsList items={props.loadedItems} />
+      <ProductTypes />
     </>
   );
 };
