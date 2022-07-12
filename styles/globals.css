@@ -43,4 +43,5 @@ h6 {
 }
 p {
   font: 500 15px/25px Manrope, sans-serif;
+  opacity: 50%;
 }

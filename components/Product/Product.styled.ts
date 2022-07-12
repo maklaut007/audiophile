@@ -19,7 +19,7 @@ export const ProductImage = styled(Image)`
 `;
 export const NewProduct = styled.h6``; //import from theme
 
-export const Title = styled.h2`
+export const Title = styled.h3`
   font-weight: 400;
   margin: 14px 0;
 `; //maybe romove font-weight
@@ -33,7 +33,22 @@ export const Price = styled.h6`
 export const AddToCart = styled.button`
   margin: 14px 0;
 `;
+export const InTheBox = styled.section`
+  margin-top: 100px;
+`;
+export const InTheBoxList = styled.ul`
+  margin-top: 30px;
+`;
+export const InTheBoxItem = styled.li`
+  margin-bottom: 13px;
+  list-style-type: none;
+`;
+export const InTheBoxText = styled.span`
+  opacity: 50%;
+`;
+export const Quantity = styled.span`
+  color: ${(props) => props.theme.colors.orange};
+`;
 
-export const InTheBox = styled.div``;
 export const ImageCollection = styled.div``;
 export const MayLike = styled.div``;
