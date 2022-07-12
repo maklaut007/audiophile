@@ -1,28 +1,28 @@
 import React from "react";
 import * as Styled from "./Product.styled";
 
-function ProductExamples({ item }: any): JSX.Element {
-  console.log(item);
+function ProductExamples({ data }: any): JSX.Element {
   return (
     <Styled.Product>
-      Hello
-      {/* <Styled.GoBack>Go Back</Styled.GoBack>
-      <Styled.ProductImage
-        width="327"
-        height="352"
-        alt={item.name}
-        src={item.categoryImage.mobile}
-      />
+      <Styled.GoBack>Go Back</Styled.GoBack>
+      <Styled.ProductImageWrap>
+        <Styled.ProductImage
+          width="327"
+          height="352"
+          alt={data.name}
+          src={data.image.mobile}
+        />
+      </Styled.ProductImageWrap>
       <Styled.NewProduct>New Product</Styled.NewProduct>
-      <Styled.ProductName> {item.name.toUpperCase()}</Styled.ProductName>
-      <Styled.ProductDescription>{item.description}</Styled.ProductDescription>
-      <Styled.Price>{item.price}</Styled.ProductDescription>
-      <Styled.AddToCart>{item.price}</Styled.AddToCart>
-      <Styled.FeaturesTitle>Features</Styled.FeaturesTitle>
-      <Styled.FeaturesText>{item.features}</Styled.FeaturesTitle>
-      <Styled.InTheBox>{item.inTheBox}</Styled.InTheBox>
-      <Styled.ImageCollection>{item.inTheBox}</Styled.ImageCollection>
-      <Styled.MayLike>{item.mayLike}</Styled.MayLike> */}
+      <Styled.Title> {data.name.toUpperCase()}</Styled.Title>
+      <Styled.Description>{data.description}</Styled.Description>
+      <Styled.Price>$ {data.price}</Styled.Price>
+      <Styled.AddToCart>ADD TO CART</Styled.AddToCart>
+      <Styled.Title>Features</Styled.Title>
+      <Styled.Description>{data.features}</Styled.Description>
+      <Styled.InTheBox>In The Box</Styled.InTheBox>
+      <Styled.ImageCollection>Image Collection</Styled.ImageCollection>
+      <Styled.MayLike>May Like</Styled.MayLike>
     </Styled.Product>
   );
 }

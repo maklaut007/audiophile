@@ -1,5 +1,5 @@
-import { createGlobalStyle} from "styled-components"
-import { DefaultTheme } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
+import { DefaultTheme } from "styled-components";
 
 export const theme: DefaultTheme = {
   colors: {
@@ -9,7 +9,7 @@ export const theme: DefaultTheme = {
     textWhite: "#FAFAFA",
     white: "#FFF",
     black: "#000",
-    backgroundBlack: "#101010"
+    backgroundBlack: "#101010",
   },
   text: {
     headerOne: {
@@ -48,9 +48,9 @@ export const theme: DefaultTheme = {
       font: "500 15px/25px Manrope, sans-serif",
     },
   },
-}
+};
 
 export const GlobalStyles = createGlobalStyle`
   body {
   }
-`
+`;

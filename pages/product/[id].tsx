@@ -28,6 +28,7 @@ export const getStaticProps: GetStaticProps = async (context: any) => {
   const item = data.find((item: any) => {
     return item.id.toString() === productId;
   });
+  console.log(item);
   return {
     props: {
       data: item,
@@ -39,7 +40,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const data = await getData();
   const ids = data.map((product: any) => product.id.toString());
   const params = ids.map((id: any) => ({ params: { id: id } }));
-  console.log(params);
   return {
     paths: params,
     fallback: false,
