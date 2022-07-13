@@ -1,6 +1,6 @@
 import React from "react";
 import * as Styled from "./Product.styled";
-
+import Image from "next/image";
 function ProductExamples({ data }: any): JSX.Element {
   console.log(data);
 
@@ -37,8 +37,33 @@ function ProductExamples({ data }: any): JSX.Element {
         <Styled.Title>IN THE BOX</Styled.Title>
         <Styled.InTheBoxList>{itemsInBox}</Styled.InTheBoxList>
       </Styled.InTheBox>
-      <Styled.ImageCollection>Image Collection</Styled.ImageCollection>
-      <Styled.MayLike>May Like</Styled.MayLike>
+      <Styled.ImageCollection>
+        <Styled.ImageColSmall>
+          <Styled.ProductImage
+            src={data.gallery.first.mobile}
+            width="327"
+            height="174"
+            alt="Image1"
+          />
+        </Styled.ImageColSmall>
+        <Styled.ImageColSmall>
+          <Styled.ProductImage
+            src={data.gallery.second.mobile}
+            width="327"
+            height="174"
+            alt="Image2"
+          />
+        </Styled.ImageColSmall>
+        <Styled.ImageColLarge>
+          <Styled.ProductImage
+            src={data.gallery.third.mobile}
+            width="327"
+            height="368"
+            alt="Image3"
+          />
+        </Styled.ImageColLarge>
+      </Styled.ImageCollection>
+      <Styled.MayLike></Styled.MayLike>
     </Styled.Product>
   );
 }

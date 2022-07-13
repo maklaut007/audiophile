@@ -17,6 +17,11 @@ export const ProductImageWrap = styled.div`
 export const ProductImage = styled(Image)`
   border-radius: 8px;
 `;
+export const ImageColSmall = styled.div`
+  margin-bottom: 20px;
+`;
+export const ImageColLarge = styled.div``;
+
 export const NewProduct = styled.h6``; //import from theme
 
 export const Title = styled.h3`
@@ -37,7 +42,7 @@ export const InTheBox = styled.section`
   margin-top: 100px;
 `;
 export const InTheBoxList = styled.ul`
-  margin-top: 30px;
+  margin: 30px 0 120px;
 `;
 export const InTheBoxItem = styled.li`
   margin-bottom: 13px;
@@ -50,5 +55,11 @@ export const Quantity = styled.span`
   color: ${(props) => props.theme.colors.orange};
 `;
 
-export const ImageCollection = styled.div``;
+export const ImageCollection = styled.section`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 export const MayLike = styled.div``;
