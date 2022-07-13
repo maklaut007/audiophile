@@ -1,8 +1,8 @@
 import React from "react";
 import * as Styled from "./Product.styled";
-import Image from "next/image";
+import SeeProductButton from "../SeeProductButton";
 function ProductExamples({ data }: any): JSX.Element {
-  console.log(data);
+  console.log(data.others);
 
   const itemsInBox = data.includes.map((component: any) => {
     return (
@@ -12,6 +12,24 @@ function ProductExamples({ data }: any): JSX.Element {
         </Styled.Quantity>
         <Styled.InTheBoxText>{component.item}</Styled.InTheBoxText>
       </Styled.InTheBoxItem>
+    );
+  });
+  const mayLikeItems = data.others.map((component: any) => {
+    return (
+      <Styled.MayLikeItem key={component.slug}>
+        <Styled.MayLikeImage>
+          <Styled.ProductImage
+            src={component.image.mobile}
+            width="327"
+            height="120"
+            alt={component.slug}
+          />
+        </Styled.MayLikeImage>
+        <Styled.MayLikeTitle>
+          {component.name.toUpperCase()}
+        </Styled.MayLikeTitle>
+        <SeeProductButton address="#" />
+      </Styled.MayLikeItem>
     );
   });
 
@@ -63,7 +81,10 @@ function ProductExamples({ data }: any): JSX.Element {
           />
         </Styled.ImageColLarge>
       </Styled.ImageCollection>
-      <Styled.MayLike></Styled.MayLike>
+      <Styled.MayLike>
+        <Styled.MayLikeTitle>YOU MAY ALSO LIKE</Styled.MayLikeTitle>
+        {mayLikeItems}
+      </Styled.MayLike>
     </Styled.Product>
   );
 }

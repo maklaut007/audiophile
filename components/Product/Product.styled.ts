@@ -62,4 +62,21 @@ export const ImageCollection = styled.section`
   justify-content: center;
   align-items: center;
 `;
-export const MayLike = styled.div``;
+export const MayLike = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 0;
+`;
+export const MayLikeItem = styled.article`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 56px;
+`;
+export const MayLikeImage = styled.div``;
+export const MayLikeTitle = styled.h5`
+  font-weight: 500;
+  margin: 30px;
+`;
+export const MayLikeLink = styled.div``;

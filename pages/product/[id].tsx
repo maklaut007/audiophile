@@ -4,13 +4,14 @@ import Product from "../../components/Product";
 import fsPromises from "fs/promises";
 import path from "path";
 import { GetStaticProps, GetStaticPaths } from "next";
-
+import ProductTypes from "../../components/ProductTypes";
 const Home: NextPage = (props: any) => {
   const router = useRouter();
   const { name } = router.query;
   return (
     <>
       <Product data={props.data} />
+      <ProductTypes />
     </>
   );
 };
@@ -28,7 +29,6 @@ export const getStaticProps: GetStaticProps = async (context: any) => {
   const item = data.find((item: any) => {
     return item.id.toString() === productId;
   });
-  console.log(item);
   return {
     props: {
       data: item,
