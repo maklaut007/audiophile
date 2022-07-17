@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import headerImage from '/assets/mobile/image-header.jpg';
+import styled from "styled-components";
+import headerImage from "/assets/mobile/image-header.jpg";
 
 export const Footer = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
   color: ${(props) => props.theme.colors.white};
-  background: ${(props) => props.theme.colors.backgroundBlack};;
+  background: ${(props) => props.theme.colors.backgroundBlack}; ;
 `;
 
 export const Title = styled.h1`
@@ -18,19 +18,17 @@ export const LinksList = styled.ul`
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  justify-content:center ;
+  justify-content: center;
   align-items: center;
   padding: 0;
 `;
 export const LinksListItem = styled.li`
   font: ${(props) => props.theme.text.body.font};
   margin: 10px;
-  
+  cursor: pointer;
 `;
 
-export const Link = styled.a`
-  
-`;
+export const Link = styled.a``;
 export const Description = styled.p`
   margin: 24px;
   font: ${(props) => props.theme.text.body.font};
@@ -39,7 +37,7 @@ export const Description = styled.p`
 `;
 
 export const Socials = styled.div`
-    margin: 30px 0;
+  margin: 30px 0;
 `;
 export const SocialsLink = styled.a`
   margin: 0 10px;

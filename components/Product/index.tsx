@@ -1,6 +1,5 @@
 import React from "react";
 import * as Styled from "./Product.styled";
-import SeeProductButton from "../SeeProductButton";
 function ProductExamples({ data }: any): JSX.Element {
   console.log(data.others);
 
@@ -14,24 +13,24 @@ function ProductExamples({ data }: any): JSX.Element {
       </Styled.InTheBoxItem>
     );
   });
-  const mayLikeItems = data.others.map((component: any) => {
-    return (
-      <Styled.MayLikeItem key={component.slug}>
-        <Styled.MayLikeImage>
-          <Styled.ProductImage
-            src={component.image.mobile}
-            width="327"
-            height="120"
-            alt={component.slug}
-          />
-        </Styled.MayLikeImage>
-        <Styled.MayLikeTitle>
-          {component.name.toUpperCase()}
-        </Styled.MayLikeTitle>
-        <SeeProductButton address="#" />
-      </Styled.MayLikeItem>
-    );
-  });
+  // const mayLikeItems = data.others.map((component: any) => {
+  //   return (
+  //     <Styled.MayLikeItem key={component.slug}>
+  //       <Styled.MayLikeImage>
+  //         <Styled.ProductImage
+  //           src={component.image.mobile}
+  //           width="327"
+  //           height="120"
+  //           alt={component.slug}
+  //         />
+  //       </Styled.MayLikeImage>
+  //       <Styled.MayLikeTitle>
+  //         {component.name.toUpperCase()}
+  //       </Styled.MayLikeTitle>
+  //       <SeeProductButton address="#" />
+  //     </Styled.MayLikeItem>
+  //   );
+  // });
 
   return (
     <Styled.Product>
@@ -81,10 +80,10 @@ function ProductExamples({ data }: any): JSX.Element {
           />
         </Styled.ImageColLarge>
       </Styled.ImageCollection>
-      <Styled.MayLike>
+      {/* <Styled.MayLike>
         <Styled.MayLikeTitle>YOU MAY ALSO LIKE</Styled.MayLikeTitle>
         {mayLikeItems}
-      </Styled.MayLike>
+      </Styled.MayLike> */}
     </Styled.Product>
   );
 }

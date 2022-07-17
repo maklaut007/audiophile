@@ -1,11 +1,10 @@
-import styled from 'styled-components';
-import headerImage from '/assets/mobile/image-header.jpg';
+import styled from "styled-components";
 
-export const Wrapper = styled.header<{ adress: string}>`
+export const Wrapper = styled.header<{ adress: string }>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color:  ${props => props.theme.colors.textWhite};
+  color: ${(props) => props.theme.colors.textWhite};
   text-align: center;
   background-image: url(${(props) => props.adress});
   background-repeat: no-repeat;

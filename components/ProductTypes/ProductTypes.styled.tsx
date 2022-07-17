@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import Image from 'next/image';
+import styled from "styled-components";
+import Image from "next/image";
 
 export const Wrapper = styled.section`
   display: flex;
@@ -15,22 +15,22 @@ export const ProductType = styled.article`
   align-items: center;
   position: relative;
   margin-bottom: 20px;
-  &::after{
-    content: '';
+  cursor: pointer;
+  &::after {
+    content: "";
     position: absolute;
     width: 100%;
     height: 80%;
     top: 15%;
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
     z-index: -1;
     border-radius: 8px;
   }
 `;
-export const ProductImage = styled(Image)`
-`;
+export const ProductImage = styled(Image)``;
 export const ProductName = styled.h5`
   font: ${(props) => props.theme.text.headerSix.font};
-  
+
   margin: 0;
   font-weight: 500;
 `;

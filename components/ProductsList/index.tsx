@@ -1,6 +1,5 @@
 import React from "react";
 import * as Styled from "./ProductsList.styled";
-import Image from "next/image";
 import SeeProductButton from "../SeeProductButton";
 function ProductsList({ items }: any): JSX.Element {
   const renderProducts = items.map((item: any) => {
@@ -18,7 +17,7 @@ function ProductsList({ items }: any): JSX.Element {
         <Styled.ProductDescription>
           {item.description}
         </Styled.ProductDescription>
-        <SeeProductButton address={`/category/${item.category}`} />
+        <SeeProductButton address={`/product/${item.slug}`} />
       </Styled.Product>
     );
   });

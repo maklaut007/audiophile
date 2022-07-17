@@ -1,6 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Wrapper = styled.a<{ border?: string, background?: string, textColor?: string }>`
+export const Wrapper = styled.a<{
+  border?: string;
+  background?: string;
+  textColor?: string;
+}>`
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,6 +19,4 @@ export const Wrapper = styled.a<{ border?: string, background?: string, textColo
   background-color: ${({ background }) => background};
 `;
 
-export const FirstProductName = styled.div`
-
-`;
+export const FirstProductName = styled.div``;
