@@ -4,7 +4,7 @@ export const theme: DefaultTheme = {
   colors: {
     orange: "#D87D4A",
     orangeHover: "#FBAF85",
-    backgroundWhite: "#F1F1F1",
+    gray: "#F1F1F1",
     textWhite: "#FAFAFA",
     white: "#FFF",
     black: "#000",

@@ -1,5 +1,6 @@
 import React from "react";
 import * as Styled from "./Product.styled";
+import AddToCart from "./AddToCart";
 function ProductExamples({ data }: any): JSX.Element {
   console.log(data.others);
 
@@ -31,7 +32,6 @@ function ProductExamples({ data }: any): JSX.Element {
   //     </Styled.MayLikeItem>
   //   );
   // });
-
   return (
     <Styled.Product>
       <Styled.GoBack>Go Back</Styled.GoBack>
@@ -47,7 +47,11 @@ function ProductExamples({ data }: any): JSX.Element {
       <Styled.Title> {data.name.toUpperCase()}</Styled.Title>
       <Styled.Description>{data.description}</Styled.Description>
       <Styled.Price>$ {data.price}</Styled.Price>
-      <Styled.AddToCart>ADD TO CART</Styled.AddToCart>
+      <AddToCart
+        price={data.price}
+        name={data.name}
+        pic={"/assets/cart/image-" + data.slug + ".jpg"}
+      />
       <Styled.Title>FEATURES</Styled.Title>
       <Styled.Description>{data.features}</Styled.Description>
       <Styled.InTheBox>

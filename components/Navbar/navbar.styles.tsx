@@ -1,5 +1,5 @@
 import styled from "styled-components";
-interface menuStatus {
+interface openStatus {
   isOpen: boolean;
 }
 
@@ -8,7 +8,6 @@ export const Header = styled.header`
   color: ${(props) => props.theme.colors.textGray};
   position: fixed;
   width: 100%;
-
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -30,12 +29,12 @@ export const Logo = styled.a`
 `;
 export const MenuButton = styled.div``;
 
-export const Menu = styled.div<menuStatus>`
+export const Menu = styled.div<openStatus>`
   background-color: ${(props) => props.theme.colors.white};
   display: ${(props) => (props.isOpen ? "block" : "none")};
 `;
 
-export const Cart = styled.a`
+export const Cart = styled.div`
   width: 23px;
   height: 20px;
   cursor: pointer;

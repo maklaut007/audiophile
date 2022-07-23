@@ -5,6 +5,7 @@ interface Product {
   name: string;
   amount: number;
   price: number;
+  pic: string;
 }
 interface Cart {
   products: Product[];
@@ -21,11 +22,14 @@ export const storeSlice = createSlice({
       state.products = action.payload;
     },
     addProduct: (state, action: any) => {
-      state.products.push({
-        name: action.name,
-        amount: action.amount,
-        price: action.price,
-      });
+      //check if alredy exist and add amount if it is.
+      state.products = [...state.products, action.payload];
+    },
+    removeAll: (state) => {
+      state.products = [];
+    },
+    changeProductAmount: (state, action) => {
+      // find by id/name and change ammount;
     },
   },
 });
