@@ -1,16 +1,21 @@
 import React from "react";
 import * as Styled from "./Cart.styled";
 import { useSelector, useDispatch } from "react-redux";
+import { removeAll } from "../../store/storeSlice";
 
 interface Props {
   isOpen: boolean;
 }
 function Cart({ isOpen }: Props) {
   const data = useSelector((state: any) => state.data.products);
-
+  const dispatch = useDispatch();
   const total = data.reduce((sum: number, item: any) => {
     return sum + item.price * item.amount;
   }, 0);
+  const removeAllProducts = () => {
+    dispatch(removeAll());
+  };
+
   const cartItems = data.map((item: any) => {
     return (
       <Styled.Item key={item.name + item.price.toString()}>
@@ -38,7 +43,9 @@ function Cart({ isOpen }: Props) {
     <Styled.Cart isOpen={isOpen}>
       <Styled.CartTop>
         <Styled.CartName> CART ({data.length})</Styled.CartName>
-        <Styled.CartRemove> Remove all</Styled.CartRemove>
+        <Styled.CartRemove onClick={removeAllProducts}>
+          Remove all
+        </Styled.CartRemove>
       </Styled.CartTop>
       <Styled.ItemsList>{cartItems}</Styled.ItemsList>
       <Styled.CartBottom>
