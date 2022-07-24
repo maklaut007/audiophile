@@ -8,7 +8,13 @@ export const Product = styled.article`
   padding: 80px 24px 0;
 `;
 
-export const GoBack = styled.button``;
+export const GoBack = styled.button`
+  margin: 16px 0 24px;
+  background-color: transparent;
+  font: ${(props) => props.theme.text.body.font};
+  opacity: 50%;
+  cursor: pointer;
+`;
 export const ProductImageWrap = styled.div`
   width: 100%;
   display: flex;

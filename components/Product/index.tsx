@@ -1,8 +1,10 @@
 import React from "react";
 import * as Styled from "./Product.styled";
 import AddToCart from "./AddToCart";
+import { useRouter } from "next/router";
+
 function ProductExamples({ data }: any): JSX.Element {
-  console.log(data.others);
+  const router = useRouter();
 
   const itemsInBox = data.includes.map((component: any) => {
     return (
@@ -34,7 +36,9 @@ function ProductExamples({ data }: any): JSX.Element {
   // });
   return (
     <Styled.Product>
-      <Styled.GoBack>Go Back</Styled.GoBack>
+      <Styled.GoBack type="button" onClick={() => router.back()}>
+        Go Back
+      </Styled.GoBack>
       <Styled.ProductImageWrap>
         <Styled.ProductImage
           width="327"

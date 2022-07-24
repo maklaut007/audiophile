@@ -3,7 +3,6 @@ import * as Styled from "./ProductsList.styled";
 import SeeProductButton from "../SeeProductButton";
 function ProductsList({ items }: any): JSX.Element {
   const renderProducts = items.map((item: any) => {
-    console.log(item.name);
     return (
       <Styled.Product key={item.id}>
         <Styled.ProductImage

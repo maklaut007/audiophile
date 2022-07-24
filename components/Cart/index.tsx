@@ -11,7 +11,6 @@ function Cart({ isOpen }: Props) {
   const total = data.reduce((sum: number, item: any) => {
     return sum + item.price * item.amount;
   }, 0);
-  console.log(data);
   const cartItems = data.map((item: any) => {
     return (
       <Styled.Item key={item.name + item.price.toString()}>
