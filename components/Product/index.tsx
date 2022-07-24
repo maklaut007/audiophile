@@ -47,7 +47,7 @@ function ProductExamples({ data }: any): JSX.Element {
           src={data.image.mobile}
         />
       </Styled.ProductImageWrap>
-      <Styled.NewProduct>New Product</Styled.NewProduct>
+      {data.new === true && <Styled.NewProduct>NEW PRODUCT</Styled.NewProduct>}
       <Styled.Title> {data.name.toUpperCase()}</Styled.Title>
       <Styled.Description>{data.description}</Styled.Description>
       <Styled.Price>$ {data.price}</Styled.Price>

@@ -17,7 +17,7 @@ export const Product = styled.article`
 
 export const NewProductSign = styled.h1`
   text-align: center;
-  margin: 24px;
+  margin-bottom: 24px;
   font: ${(props) => props.theme.text.overline.font};
   letter-spacing: ${(props) => props.theme.text.overline.letterSpacing};
   color: ${(props) => props.theme.colors.orange};
@@ -28,7 +28,9 @@ export const ProductName = styled.h3`
   text-align: center;
   margin-bottom: 20px;
 `;
-
+export const ProductImageWrap = styled.div`
+  margin-bottom: 32px;
+`;
 export const ProductImage = styled(Image)`
   border-radius: 8px;
 `;

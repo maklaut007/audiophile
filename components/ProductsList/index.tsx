@@ -5,13 +5,17 @@ function ProductsList({ items }: any): JSX.Element {
   const renderProducts = items.map((item: any) => {
     return (
       <Styled.Product key={item.id}>
-        <Styled.ProductImage
-          width="327"
-          height="352"
-          alt={item.name}
-          src={item.categoryImage.mobile}
-        />
-        <Styled.NewProductSign>NEW PRODUCT</Styled.NewProductSign>
+        <Styled.ProductImageWrap>
+          <Styled.ProductImage
+            width="327"
+            height="352"
+            alt={item.name}
+            src={item.categoryImage.mobile}
+          />
+        </Styled.ProductImageWrap>
+        {item.new === true && (
+          <Styled.NewProductSign>NEW PRODUCT</Styled.NewProductSign>
+        )}
         <Styled.ProductName> {item.name.toUpperCase()}</Styled.ProductName>
         <Styled.ProductDescription>
           {item.description}

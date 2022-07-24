@@ -28,7 +28,12 @@ export const ImageColSmall = styled.div`
 `;
 export const ImageColLarge = styled.div``;
 
-export const NewProduct = styled.h6``; //import from theme
+export const NewProduct = styled.h6`
+  font: ${(props) => props.theme.text.overline.font};
+  letter-spacing: ${(props) => props.theme.text.overline.letterSpacing};
+  color: ${(props) => props.theme.colors.orange};
+  margin: 24px 0 18px;
+`;
 
 export const Title = styled.h3`
   font-weight: 400;
