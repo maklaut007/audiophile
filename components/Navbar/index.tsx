@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   return (
-    <Styled.Header>
+    <Styled.Header isOpen={menuOpen || cartOpen}>
       <Styled.HeaderPanel>
         <Styled.MenuButton onClick={toggleMenu}>
           <HamburgerIcon open={menuOpen} />

@@ -3,7 +3,7 @@ interface openStatus {
   isOpen: boolean;
 }
 
-export const Header = styled.header`
+export const Header = styled.header<openStatus>`
   background-color: ${(props) => props.theme.colors.backgroundBlack};
   color: ${(props) => props.theme.colors.textGray};
   position: fixed;
@@ -11,6 +11,8 @@ export const Header = styled.header`
   z-index: 1;
   display: flex;
   flex-direction: column;
+  box-shadow: ${(props) =>
+    props.isOpen ? "0 0 0 10000px rgba(0,0,0,.50);" : "none"};
 `;
 
 export const HeaderPanel = styled.section`
