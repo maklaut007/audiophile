@@ -4,6 +4,9 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-}
+  images: {
+    deviceSizes: [640, 750, 768, 828, 1080, 1200, 1440, 1920, 2048, 3840],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

@@ -5,7 +5,7 @@ export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px 5%;
+  margin: 0 5% 40px;
 `;
 export const FirstProduct = styled.div`
   background-color: ${(props) => props.theme.colors.orange};
