@@ -8,7 +8,7 @@ export const Header = styled.header<openStatus>`
   color: ${(props) => props.theme.colors.textGray};
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   box-shadow: ${(props) =>

@@ -5,10 +5,11 @@ export const Wrapper = styled.section`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 40px 19px;
+  margin: 40px 14px;
   @media only screen and (min-width: 768px) {
     flex-flow: row nowrap;
-    padding: 96px 40px;
+    justify-content: space-between;
+    margin: 96px 35px 76px;
   }
   @media only screen and (min-width: 1440px) {
     padding: 168px 165px;
@@ -20,7 +21,7 @@ export const ProductType = styled.article`
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin: 0 5px 20px;
+  margin: 0 10px 20px;
   cursor: pointer;
   max-width: 350px;
   &::after {
