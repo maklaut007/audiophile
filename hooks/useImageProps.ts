@@ -26,10 +26,10 @@ export default function useImageProps(props: ImageSet) {
     if (width < 768) {
       setCurrentProps(props.mobile);
     }
-    if (width > 768 && width < 1440) {
+    if (width >= 768 && width < 1440) {
       setCurrentProps(props.tablet);
     }
-    if (width > 1440) {
+    if (width >= 1440) {
       setCurrentProps(props.desktop);
     }
   }, [width]);
