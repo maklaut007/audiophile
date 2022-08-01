@@ -26,8 +26,7 @@ export const HeaderPanel = styled.section`
 `;
 
 export const Logo = styled.a`
-  color: white;
-  font-size: 1.8rem;
+  display: flex;
 `;
 export const MenuButton = styled.div``;
 
